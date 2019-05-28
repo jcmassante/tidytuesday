@@ -43,8 +43,8 @@ word.counts <- description %>%
 
 
 # Prepare for high resolution figure
-tiff(filename = "Sentimental.analysis.wines.tif",
-     width = 9.80, height = 5.80, units = "in", res = 600)
+jpeg(filename = "Sentimental.analysis.wines.jpg",
+     width = 9.80, height = 5.80, units = "in", res = 300)
 
 # Tidy the data and plot it
 word.counts %>% 
